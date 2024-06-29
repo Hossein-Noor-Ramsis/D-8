@@ -9,5 +9,5 @@
 
 <h2>Website Preview</h2>
 <p>Visit the website: 
-  <a href="[https://www.google.com](https://hossein-noor-ramsis.github.io/D-8/)">[https://www.google.com](https://hossein-noor-ramsis.github.io/D-8/)</a>
+  <a href="https://hossein-noor-ramsis.github.io/D-8/">https://hossein-noor-ramsis.github.io/D-8/</a>
 </p>
