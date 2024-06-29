@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hossein-Noor-Ramsis" />
+
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="./Source/Image/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./Source/Image/favicon.ico" />
+
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body class="font-poppins scroll-smooth bg-[#1d002c] text-white">
+    <header
+      id="header"
+      class="z-30 absolute left-1/2 top-0 -translate-x-1/2 w-full max-w-[1360px] h-[84px]"
+    >
+      <!-- ==================== navbar ==================== -->
+      <nav class="z-30 flex justify-between items-center gap-10 p-5">
+        <!-- ===== Nav Logo ===== -->
+        <div>
+          <a class="text-4xl font-bold text-[#12f7ff]" href="#">Logo</a>
+        </div>
+
+        <!-- ===== Nav Menu Btn ===== -->
+        <div class="sm:hidden">
+          <!-- open menu btn -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-7"
+            id="open-menu"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <!-- close menu btn -->
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7 hidden"
+            id="close-menu"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <!-- ===== Nav List ===== -->
+        <div
+          id="nav-list"
+          class="hidden absolute backdrop-blur top-16 left-0 right-0 p-8 sm:p-0 border-b sm:w-min sm:static sm:bg-transparent sm:border-none sm:block"
+        >
+          <ul
+            class="flex flex-col gap-8 justify-between items-center sm:flex-row sm:gap-6"
+          >
+            <li>
+              <a
+                class="font-medium text-base block w-40 sm:w-auto text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] shadow-blur"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-base block w-40 sm:w-auto text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 hover:bg-[#12f7ff] hover:text-[#1d002c] hover:shadow-blur"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-base block w-40 sm:w-auto text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 hover:bg-[#12f7ff] hover:text-[#1d002c] hover:shadow-blur"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-base block w-40 sm:w-auto text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 hover:bg-[#12f7ff] hover:text-[#1d002c] hover:shadow-blur"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="content">
+      <!-- ==================== parallax ==================== -->
+      <section class="relative h-screen w-full">
+        <img
+          class="absolute h-screen w-full object-cover"
+          src="./src/assets/image/Home-Images/sky.png"
+          alt="sky"
+        />
+        <img
+          id="moon"
+          class="absolute h-screen w-full object-cover mix-blend-screen"
+          src="./src/assets/image/Home-Images/moon.png"
+          alt="moon"
+        />
+        <img
+          class="absolute h-screen w-full object-cover"
+          src="./src/assets/image/Home-Images/water.png"
+          alt="water"
+        />
+        <img
+          id="center-city"
+          class="absolute h-screen w-full object-cover"
+          src="./src/assets/image/Home-Images/center-city.png"
+          alt="center-city"
+        />
+        <img
+          id="right-city"
+          class="absolute h-screen w-full object-cover"
+          src="./src/assets/image/Home-Images/right-city.png"
+          alt="right-city"
+        />
+        <img
+          id="left-city"
+          class="absolute h-screen w-full object-cover"
+          src="./src/assets/image/Home-Images/left-city.png"
+          alt="left-city"
+        />
+        <div class="relative overflow-hidden h-screen w-full">
+          <img
+            id="train"
+            class="absolute h-full object-fill"
+            src="./src/assets/image/Home-Images/train.png"
+            alt="train"
+          />
+          <img
+            class="absolute h-screen w-full object-cover"
+            src="./src/assets/image/Home-Images/rail.png"
+            alt="rail"
+          />
+          <div class="absolute h-screen w-full">
+            <h1
+              id="heading"
+              class="font-pacifico font-extrabold text-4xl drop-shadow text-shadow absolute top-[85%] left-[3%]"
+            >
+              Parallax Website
+            </h1>
+          </div>
+          <img
+            class="absolute h-screen w-full object-cover"
+            src="./src/assets/image/Home-Images/hill-left-1.png"
+            alt="hill-left"
+          />
+          <img
+            class="absolute h-screen w-full object-cover"
+            src="./src/assets/image/Home-Images/hill-right-1.png"
+            alt="hill-right"
+          />
+        </div>
+      </section>
+
+      <!-- ==================== about ==================== -->
+      <section class="tab relative w-full h-screen">
+        <!-- info box -->
+        <div
+          class="z-20 w-2/3 pl-5 md:pl-10 absolute -top-8 left-0 bg-[#1d002c]"
+        >
+          <h2 class="animation-show font-bold text-3xl">About Us</h2>
+
+          <p class="animation-show text-base text-justify my-4 line-clamp-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            quia natus facilis eligendi similique reiciendis, suscipit quam!
+            Exercitationem dignissimos ipsa assumenda ullam accusamus sit.
+          </p>
+
+          <div class="animation-show">
+            <a
+              class="font-medium text-base block w-28 text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] hover:bg-[#1d002c] hover:text-[#12f7ff] hover:shadow-blur my-4"
+              href="#"
+            >
+              Read More!
+            </a>
+          </div>
+        </div>
+
+        <!-- parallax box -->
+        <div class="">
+          <img
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-24"
+            src="./src/assets/image/About-Images/waterfall.png"
+            alt="waterfall"
+          />
+          <img
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-7"
+            src="./src/assets/image/About-Images/desert-sky.png"
+            alt="sky"
+          />
+          <img
+            id="second-moon"
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none top-24 mix-blend-screen"
+            src="./src/assets/image/About-Images/desert-moon.png"
+            alt="moon"
+          />
+          <img
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-7"
+            src="./src/assets/image/About-Images/desert-NoSky.png"
+            alt="no sky"
+          />
+          <img
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-7"
+            src="./src/assets/image/About-Images/desert-rock.png"
+            alt="rock"
+          />
+          <img
+            class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-7"
+            src="./src/assets/image/About-Images/water.png"
+            alt="water"
+          />
+          <div class="relative left-0 z-10 h-screen w-full overflow-hidden">
+            <img
+              id="man"
+              class="absolute -right-80 z-10 h-full object-fill pointer-events-none -top-7"
+              src="./src/assets/image/About-Images/man.png"
+              alt="man"
+            />
+            <img
+              class="absolute left-0 z-10 h-screen w-full object-cover pointer-events-none -top-7"
+              src="./src/assets/image/About-Images/grass.png"
+              alt="grass"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== products ==================== -->
+      <section class="tab text-center p-5 sm:p-10">
+        <h2 class="animation-show font-bold text-3xl mb-24">Our Products</h2>
+
+        <!-- cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-20 max-w-[630px] xl:max-w-none mx-auto"
+        >
+          <!-- card -->
+          <div class="animation-show">
+            <div
+              class="relative border-2 border-[#12f7ff] rounded-3xl w-56 h-80 p-5 hover:-translate-y-2 transition-transform duration-300 mx-auto"
+            >
+              <img
+                class="absolute -top-16 left-1/2 -translate-x-1/2 w-36"
+                src="src/assets/image/products/Salmon.png"
+                alt="product"
+              />
+              <div class="flex justify-between mt-24">
+                <p class="font-bold text-lg">Salmon</p>
+                <p class="font-bold text-xl text-[#04cf37]">$120</p>
+              </div>
+              <p class="text-justify font-normal text-base my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                delectus aperiam sapiente.
+              </p>
+              <a
+                class="font-medium text-base block w-28 text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] hover:bg-[#1d002c] hover:text-[#12f7ff] hover:shadow-blur my-7 mx-auto"
+                href="#"
+              >
+                Read More!
+              </a>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="animation-show">
+            <div
+              class="relative border-2 border-[#12f7ff] rounded-3xl w-56 h-80 p-5 hover:-translate-y-2 transition-transform duration-300 mx-auto"
+            >
+              <img
+                class="absolute -top-12 left-1/2 -translate-x-1/2 w-40"
+                src="src/assets/image/products/Snapper.png"
+                alt="product"
+              />
+              <div class="flex justify-between mt-24">
+                <p class="font-bold text-lg">Salmon</p>
+                <p class="font-bold text-xl text-[#04cf37]">$120</p>
+              </div>
+              <p class="text-justify font-normal text-base my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                delectus aperiam sapiente.
+              </p>
+              <a
+                class="font-medium text-base block w-28 text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] hover:bg-[#1d002c] hover:text-[#12f7ff] hover:shadow-blur my-7 mx-auto"
+                href="#"
+              >
+                Read More!
+              </a>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="animation-show">
+            <div
+              class="relative border-2 border-[#12f7ff] rounded-3xl w-56 h-80 p-5 hover:-translate-y-2 transition-transform duration-300 mx-auto"
+            >
+              <img
+                class="absolute -top-12 left-1/2 -translate-x-1/2 w-40"
+                src="src/assets/image/products/Swordfish.png"
+                alt="product"
+              />
+              <div class="flex justify-between mt-24">
+                <p class="font-bold text-lg">Salmon</p>
+                <p class="font-bold text-xl text-[#04cf37]">$120</p>
+              </div>
+              <p class="text-justify font-normal text-base my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                delectus aperiam sapiente.
+              </p>
+              <a
+                class="font-medium text-base block w-28 text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] hover:bg-[#1d002c] hover:text-[#12f7ff] hover:shadow-blur my-7 mx-auto"
+                href="#"
+              >
+                Read More!
+              </a>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="animation-show">
+            <div
+              class="relative border-2 border-[#12f7ff] rounded-3xl w-56 h-80 p-5 hover:-translate-y-2 transition-transform duration-300 mx-auto"
+            >
+              <img
+                class="absolute -top-12 left-1/2 -translate-x-1/2 w-36"
+                src="src/assets/image/products/Tuna.png"
+                alt="product"
+              />
+              <div class="flex justify-between mt-24">
+                <p class="font-bold text-lg">Salmon</p>
+                <p class="font-bold text-xl text-[#04cf37]">$120</p>
+              </div>
+              <p class="text-justify font-normal text-base my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                delectus aperiam sapiente.
+              </p>
+              <a
+                class="font-medium text-base block w-28 text-center px-4 py-2 border-2 border-[#12f7ff] rounded-full transition-all duration-300 bg-[#12f7ff] text-[#1d002c] hover:bg-[#1d002c] hover:text-[#12f7ff] hover:shadow-blur my-7 mx-auto"
+                href="#"
+              >
+                Read More!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== scroll-up btn ==================== -->
+       <section id="progress" class="hidden fixed text-[#1d002c] z-50 right-2 bottom-4 p-2 rounded-full cursor-pointer">
+        <div id="progress-value" class="bg-white rounded-full p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+          </svg>          
+        </div>
+       </section>
+    </main>
+    <footer>
+      <!-- ==================== footer ==================== -->
+      <section class="text-center p-10 border-t-2 mt-5 border-[#12f7ff]">
+        <p class="font-semibold text-lg">Made with ❤️ by Hossein Noor Ramsis</p>
+      </section>
+    </footer>
+    <script src="./src/JavaScript/index.js"></script>
+  </body>
+</html>

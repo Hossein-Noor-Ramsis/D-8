@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Poppins;
+    src: url(../assets/font/Poppins-Regular.ttf) format(truetype);
+  }
+
+  @font-face {
+    font-family: Pacifico;
+    src: url(../assets/font/Pacifico-Regular.ttf) format(truetype);
+  }
+}
