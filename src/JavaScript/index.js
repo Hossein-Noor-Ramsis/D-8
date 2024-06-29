@@ -94,7 +94,7 @@ window.addEventListener("scroll", () => {
   let windowScrollHigh =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  let progressBar = Math.round((pos / windowScrollHigh) * 100);
+  let progressBar = Math.ceil((pos / windowScrollHigh) * 100) + 1;
 
   progress.style.background = `conic-gradient(#194eb9 ${progressBar}%, #67ccff ${progressBar}%)`;
 });
