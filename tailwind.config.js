@@ -9,13 +9,23 @@ module.exports = {
 
       fontFamily: {
         poppins: "Poppins",
-        pacifico: "Pacifico"
+        pacifico: "Pacifico",
       },
 
       boxShadow: {
-        "blur": "0 0 16px #12f7ff",
+        blur: "0 0 16px #12f7ff",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("hover", [
+        "@media (hover: hover) { &:hover }",
+        "@media (hover: none) { &:active }",
+      ]);
+    }),
+  ],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 };
